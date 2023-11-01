@@ -1,9 +1,33 @@
 {
-    "welcome": "SambaKDS'ye Hoşgeldin!",
-    "loginTitle": "Giriş Yap",
-    "loginBtn":"Giriş",
-    "forgotPass": "Parolamı Unuttum?",
-    "remember": "Beni Hatırla",
-    "password": "Parola",
-    "email": "Email"
+  "welcome": "SambaKDS'ye Hoşgeldin!",
+  "loginTitle": "Giriş Yap",
+  "loginBtn": "Giriş",
+  "forgotPass": "Parolamı Unuttum?",
+  "remember": "Beni Hatırla",
+  "password": "Parola",
+  "email": "Email",
+  "sidebar": {
+    "home": "Anasayfa",
+    "settings": "Genel Ayarlar",
+    "deviceSettings": "Cihaz Ayarları"
+  },
+  "home": {
+    "title": "Cihazlar"
+  },
+  "device": {
+    "title": "Cihaz Ayarları",
+    "deviceName": "Cihaz Adı",
+    "model": "Model",
+    "serialNumber": "Serial No",
+    "action": "Seçenek",
+    "closeDialog": "Kapat"
+  },
+  "settings": {
+    "title": "Genel Ayarlar",
+    "colorSettings": "Renk Ayarları",
+    "line": "Satır",
+    "cardColor": "Kart rengi",
+    "colorPicker": "Renk Seçici",
+    "duration": "Süre"
+  }
 }

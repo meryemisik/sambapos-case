@@ -1,9 +1,33 @@
 {
-    "welcome": "Welcome to SambaKDS!",
-    "loginTitle": "Log In",
-    "loginBtn":"Login",
-    "forgotPass": "Forgot Password?",
-    "remember": "Remember me",
-    "password": "Password",
-    "email": "Email"
+  "welcome": "Welcome to SambaKDS!",
+  "loginTitle": "Log In",
+  "loginBtn": "Login",
+  "forgotPass": "Forgot Password?",
+  "remember": "Remember me",
+  "password": "Password",
+  "email": "Email",
+  "sidebar": {
+    "home": "Home",
+    "settings": "General Settings",
+    "deviceSettings": "Device Settings"
+  },
+  "home": {
+    "title": "Devices"
+  },
+  "device": {
+    "title": "Device Settings",
+    "deviceName": "Device Name",
+    "model": "Model",
+    "serialNumber": "Serial Number",
+    "action": "Action",
+    "closeDialog": "Close"
+  },
+  "settings": {
+    "title": "General Settings",
+    "colorSettings": "Color Settings",
+    "line": "Line",
+    "cardColor": "Card Color",
+    "colorPicker": "Color Picker",
+    "duration": "Duration"
+  }
 }
