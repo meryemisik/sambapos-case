@@ -1,6 +1,5 @@
 <template>
-  <v-card>
-    <v-layout>
+<v-layout>
       <v-navigation-drawer
         v-model="drawer"
         :rail="rail"
@@ -50,9 +49,7 @@
          
         </v-list>
       </v-navigation-drawer>
-      <v-main style="height: 250px"></v-main>
     </v-layout>
-  </v-card>
 </template>
 <script>
 export default {
