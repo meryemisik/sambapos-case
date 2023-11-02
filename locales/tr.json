@@ -28,6 +28,37 @@
     "line": "Satır",
     "cardColor": "Kart rengi",
     "colorPicker": "Renk Seçici",
-    "duration": "Süre"
+    "duration": "Süre",
+    "token": {
+      "title": "Token Ayarları",
+      "username": "Kullanıcı Adı",
+      "password": "Şifre",
+      "application": "Uygulama"
+      },
+      "server":{
+        "title":"Sunucu Ayarları",
+        "apiTitle": "Api Adresi"
+      },
+      "status":{
+        "title": "Durum Ayarları",
+        "waiting": "Bekleyen Durum",
+        "ready": "Hazır durum"
+      },
+      "admission":{
+        "title": "Adisyon Ayarları",
+        "showType":"Adisyon Türünü Göster",
+        "showTicket":"Adisyon Etiketini Göster",
+        "extraditionCases":"İade Durumları"
+      },
+      "complatedAdmission":{
+        "title":"Tamamlanan Adisyonlar",
+        "showPage":"Tamamlanan Sayfasını Göster",
+        "storagePeriod":"Saklama Süresi",
+        "cardColor":"Kart Rengi",
+        "colorPicker":"Renk Seçici",
+        "apply":"Uygula",
+        "cancel":"İptal",
+        "duration":"Süre"
+      }
   }
 }

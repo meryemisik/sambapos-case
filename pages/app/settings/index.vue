@@ -11,22 +11,18 @@
             <v-card class="mb-5">
               <v-card-title>
                 <v-icon left>mdi-palette</v-icon>
-                {{$t("settings.colorSettings")}}
+                {{ $t("settings.colorSettings") }}
               </v-card-title>
               <hr />
               <v-card-text>
                 <v-row v-for="(colorRow, index) in colorRows" :key="index">
                   <v-col
-                    cols="12"
-                    sm="10"
-                    md="8"
-                    lg="8"
                     class="d-flex align-center"
                   >
-                    <h3> {{$t("settings.line")}} {{ index + 1 }}</h3>
+                    <h3>{{ $t("settings.line") }} {{ index + 1 }}</h3>
                   </v-col>
                   <v-col class="d-flex align-center">
-                    {{$t("settings.cardColor")}}
+                    {{ $t("settings.cardColor") }}
                     <div
                       class="pa-4 ml-2 d-inline-block rounded cursor-pointer"
                       :style="{ backgroundColor: colorRow.color }"
@@ -39,7 +35,7 @@
                       <v-card>
                         <v-card-title>
                           <v-icon left>mdi-palette</v-icon>
-                          {{$t("settings.colorPicker")}}
+                          {{ $t("settings.colorPicker") }}
                         </v-card-title>
                         <v-color-picker v-model="colorRow.color" flat />
                         <v-card-actions>
@@ -64,16 +60,16 @@
             <v-card class="mb-5">
               <v-card-title>
                 <v-icon left>mdi-cog</v-icon>
-                Token Settings
+                {{ $t("settings.token.title") }}
               </v-card-title>
               <hr />
 
               <v-card-text>
                 <v-row class="align-center">
-                  <v-col>Username:</v-col>
+                  <v-col> {{ $t("settings.token.username") }}</v-col>
                   <v-col>
                     <v-text-field
-                      label="Username"
+                      :label="`${$t('settings.token.username')}`"
                       :rules="rules"
                       hide-details
                       density="compact"
@@ -82,10 +78,10 @@
                   </v-col>
                 </v-row>
                 <v-row class="align-center">
-                  <v-col>Password:</v-col>
+                  <v-col>{{ $t("settings.token.password") }}</v-col>
                   <v-col>
                     <v-text-field
-                      label="Password"
+                      :label="`${$t('settings.token.password')}`"
                       :rules="rules"
                       hide-details
                       density="compact"
@@ -94,10 +90,10 @@
                   </v-col>
                 </v-row>
                 <v-row class="align-center">
-                  <v-col>Application:</v-col>
+                  <v-col>{{ $t("settings.token.application") }}</v-col>
                   <v-col>
                     <v-text-field
-                      label="Application"
+                      :label="`${$t('settings.token.application')}`"
                       :rules="rules"
                       hide-details
                       density="compact"
@@ -111,13 +107,13 @@
             <v-card class="mb-5">
               <v-card-title>
                 <v-icon left>mdi-cog</v-icon>
-                Sunucu Ayarları
+                {{ $t("settings.server.title") }}
               </v-card-title>
               <hr />
 
               <v-card-text>
-                <v-row class="align-center">
-                  <v-col>API Adresi:</v-col>
+                <v-row class="align-center d-flex">
+                  <v-col>{{ $t("settings.server.apiTitle") }}</v-col>
                   <v-col>
                     <v-select
                       v-model="select"
@@ -129,7 +125,7 @@
                   </v-col>
                   <v-col>
                     <v-text-field
-                      label="Api Adresi"
+                      :label="`${$t('settings.server.apiTitle')}`"
                       :rules="rules"
                       hide-details
                       density="compact"
@@ -144,16 +140,16 @@
             <v-card class="mb-5">
               <v-card-title>
                 <v-icon left>mdi-cog</v-icon>
-                Durum Ayarları
+                {{ $t("settings.status.title") }}
               </v-card-title>
               <hr />
 
               <v-card-text>
                 <v-row class="align-center">
-                  <v-col>Bekleyen Durum</v-col>
+                  <v-col>{{ $t("settings.status.waiting") }}</v-col>
                   <v-col>
                     <v-text-field
-                      label="Bekleyen Durum"
+                      :label="`${$t('settings.status.waiting')}`"
                       :rules="rules"
                       hide-details
                       density="compact"
@@ -162,10 +158,10 @@
                   </v-col>
                 </v-row>
                 <v-row class="align-center">
-                  <v-col>Hazır Durum</v-col>
+                  <v-col>{{ $t("settings.status.ready") }}</v-col>
                   <v-col>
                     <v-text-field
-                      label="Hazır Durum"
+                      :label="`${$t('settings.status.ready')}`"
                       :rules="rules"
                       hide-details
                       density="compact"
@@ -179,28 +175,28 @@
             <v-card class="mb-5">
               <v-card-title>
                 <v-icon left>mdi-blur</v-icon>
-                Adisyon Ayarları
+                {{ $t("settings.admission.title") }}
               </v-card-title>
               <hr />
 
               <v-card-text>
                 <v-row class="align-center">
-                  <v-col>Bekleyen Durum</v-col>
+                  <v-col>{{ $t("settings.admission.showType") }}</v-col>
                   <v-col>
-                    <v-text-field
-                      label="Bekleyen Durum"
-                      :rules="rules"
-                      hide-details
-                      density="compact"
-                      variant="outlined"
-                    ></v-text-field>
+                    <v-switch color="red" label="" hide-details></v-switch>
                   </v-col>
                 </v-row>
                 <v-row class="align-center">
-                  <v-col>Hazır Durum</v-col>
+                  <v-col>{{ $t("settings.admission.showTicket") }}</v-col>
+                  <v-col>
+                    <v-switch color="red" label="" hide-details></v-switch>
+                  </v-col>
+                </v-row>
+                <v-row class="align-center">
+                  <v-col>{{ $t("settings.admission.extraditionCases") }}</v-col>
                   <v-col>
                     <v-text-field
-                      label="Hazır Durum"
+                      :label="`${$t('settings.admission.extraditionCases')}`"
                       :rules="rules"
                       hide-details
                       density="compact"
@@ -214,17 +210,45 @@
             <v-card class="mb-5">
               <v-card-title>
                 <v-icon left>mdi-progress-check</v-icon>
-                Tamamlanan Adisyonlar
+                {{ $t("settings.complatedAdmission.title") }}
               </v-card-title>
               <hr />
 
               <v-card-text>
-               
                 <v-row class="align-center">
-                  <v-col>Saklama Süresi</v-col>
+                  <v-col> {{ $t("settings.complatedAdmission.showPage") }}</v-col>
+                  <v-col>
+                    <v-switch color="red" label="" hide-details></v-switch>
+                  </v-col>
+                </v-row>
+
+                <v-row class="align-center">
+                  <v-col> {{ $t("settings.complatedAdmission.storagePeriod") }}</v-col>
+                  <v-col class="d-flex align-center">
+                    {{ $t("settings.complatedAdmission.cardColor") }}
+                    <div
+                      class="pa-4 ml-2 d-inline-block rounded cursor-pointer"
+                      :style="{ backgroundColor: cardColor }"
+                      @click="showColorPickers = !showColorPickers"
+                    ></div>
+
+                    <v-dialog v-model="showColorPickers" max-width="290">
+                      <v-card>
+                        <v-card-title>
+                          <v-icon left>mdi-palette</v-icon>
+                          {{ $t("settings.complatedAdmission.colorPicker") }}
+                        </v-card-title>
+                        <v-color-picker v-model="cardColor" flat />
+                        <v-card-actions>
+                          <v-btn @click="showColorPickers = false"> {{ $t("settings.complatedAdmission.apply") }}</v-btn>
+                          <v-btn @click="cancelColorModal"> {{ $t("settings.complatedAdmission.cancel") }}</v-btn>
+                        </v-card-actions>
+                      </v-card>
+                    </v-dialog>
+                  </v-col>
                   <v-col>
                     <v-text-field
-                      label="Hazır Durum"
+                      :label="`${$t('settings.complatedAdmission.duration')}`"
                       :rules="rules"
                       hide-details
                       density="compact"
@@ -242,6 +266,8 @@
 </template>
 
 <script setup>
+const showColorPickers = ref(false);
+const cardColor = ref("#f2e456");
 const apiAdress = ref("androiddemo.sambapos.com:9000");
 const items = ref(["http://", "https://"]);
 const select = ref({ state: "http://", abbr: "http" });
@@ -262,6 +288,10 @@ const applyColor = (index) => {
 const cancelColor = (index) => {
   colorRows.value[index].colorPickerOpen = false;
 };
+const cancelColorModal = () => {
+  cardColor.value = "#f2e456";
+  showColorPickers.value = false
+}
 </script>
 <style>
 .cursor-pointer {

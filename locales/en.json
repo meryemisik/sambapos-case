@@ -28,6 +28,37 @@
     "line": "Line",
     "cardColor": "Card Color",
     "colorPicker": "Color Picker",
-    "duration": "Duration"
+    "duration": "Duration",
+    "token": {
+      "title": "Token Settings",
+      "username": "Username",
+      "password": "Password",
+      "application": "Application"
+    },
+    "server": {
+      "title": "Server Settings",
+      "apiTitle": "API Address"
+    },
+    "status": {
+      "title": "Status Settings",
+      "waiting": "Waiting Status",
+      "ready": "Ready Status"
+    },
+    "admission": {
+      "title": "Admission Settings",
+      "showType": "Show Admission Type",
+      "showTicket": "Show Admission Ticket",
+      "extraditionCases": "Extradition Cases"
+      },
+      "complatedAdmission": {
+        "title": "Completed Admissions",
+        "showPage": "Show Completed Page",
+        "storagePeriod": "Storage Period",
+        "cardColor": "Card Color",
+        "colorPicker": "Color Picker",
+        "apply": "Apply",
+        "cancel": "Cancel",
+        "duration":"Duration"
+        }
   }
 }
