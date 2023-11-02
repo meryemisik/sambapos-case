@@ -20,21 +20,21 @@
         <v-divider></v-divider>
 
         <v-list density="compact" nav class="d-flex flex-column">
-          <router-link to="/app/home" class="py-4 px-2">
+          <router-link :to="localePath('/app/home')" class="py-4 px-2">
             <v-icon icon="mdi-home-city"></v-icon>
             <span class="font-weight-black ml-5" v-if="!rail">{{
               $t("sidebar.home")
             }}</span>
           </router-link>
 
-          <router-link to="/app/settings" class="py-4 px-2">
+          <router-link :to="localePath('/app/settings')" class="py-4 px-2">
             <v-icon icon="mdi-cog"></v-icon>
             <span class="font-weight-black ml-5" v-if="!rail">{{
               $t("sidebar.settings")
             }}</span>
           </router-link>
 
-          <router-link to="/app/device" class="py-4 px-2">
+          <router-link :to="localePath('/app/device')" class="py-4 px-2">
             <v-icon icon="mdi-monitor-cellphone"></v-icon>
             <span class="font-weight-black ml-5" v-if="!rail">{{
               $t("sidebar.deviceSettings")

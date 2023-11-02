@@ -30,7 +30,7 @@
               <v-checkbox :label="$t('remember')" hide-details=""></v-checkbox>
             </div>
             <div>
-              <router-link to="/app/home" class="text-white">{{
+              <router-link :to="localePath('/app/home')" class="text-white">{{
                 $t("forgotPass")
               }}</router-link>
             </div>
@@ -46,9 +46,10 @@
   </v-container>
 </template>
 <script setup>
+const localePath = useLocalePath()
 const router = useRouter();
 const login = () => {
-  router.push("/app/home");
+  router.push(localePath('/app/home'));
 };
 </script>
 <style scoped>
